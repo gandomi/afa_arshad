@@ -33,23 +33,11 @@ class TeachersTableSeeder extends Seeder
         $teacher->save();
 
         $teacher = new Teacher;
-        $teacher->name = "مهندس احمد شکرانی";
-        $teacher->save();
-
-        $teacher = new Teacher;
         $teacher->name = "مهندس امیر باوفا طوسی";
         $teacher->save();
 
         $teacher = new Teacher;
         $teacher->name = "مهندس بهزاد بختیاری";
-        $teacher->save();
-
-        $teacher = new Teacher;
-        $teacher->name = "مهندس جواد یزدانجو";
-        $teacher->save();
-
-        $teacher = new Teacher;
-        $teacher->name = "مهندس عباس لاکی";
         $teacher->save();
     }
 }
