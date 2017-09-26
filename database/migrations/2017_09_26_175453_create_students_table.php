@@ -18,7 +18,7 @@ class CreateStudentsTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('stu_num');
-            $table->string('field');
+            $table->string('area_of_interest');
             $table->text('memo')->nullable();
             $table->json('priorities');
             $table->timestamps();
