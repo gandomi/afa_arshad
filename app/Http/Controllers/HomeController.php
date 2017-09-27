@@ -31,6 +31,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function students()
+    {
+        $teachers = Teacher::all();
+        $students = Student::all();
+        return view('students', [
+            'teachers' => $teachers,
+            'students' => $students
+        ]);
+    }
+
     public function new_student(Request $request)
     {
         $request->validate([
