@@ -18,4 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/students', 'HomeController@students')->name('students');
+Route::get('/print/afamodarres', 'HomeController@print_afamodarres')->name('print.afamodarres');
+Route::get('/print/others', 'HomeController@print_afamodarres')->name('print.others');
 Route::post('/new/student', 'HomeController@new_student')->name('new.student');

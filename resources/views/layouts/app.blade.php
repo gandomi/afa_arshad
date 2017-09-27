@@ -36,7 +36,27 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        &nbsp;
+                        @auth
+                            <li><a href="{{ route('students') }}">Students</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+                                    Prints <span class="caret"></span>
+                                </a>
+
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="{{ route('print.afamodarres') }}">
+                                            AFA.Modarres
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('print.others') }}">
+                                            Others
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        @endauth
                     </ul>
 
                     <!-- Right Side Of Navbar -->
