@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
     <style>
         td.details-control {
@@ -44,7 +45,7 @@
 
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
-                        {{ config('app.name', 'Laravel') }}
+                        <i class="fa fa-graduation-cap fa-lg" aria-hidden="true"></i>
                     </a>
                 </div>
 
@@ -52,7 +53,8 @@
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
                         @auth
-                            <li><a href="{{ route('students') }}">Students</a></li>
+                        <li><a href="{{ route('home') }}">New</a></li>
+                        <li><a href="{{ route('students') }}">Students</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     Prints <span class="caret"></span>
