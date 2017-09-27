@@ -73,7 +73,10 @@
                         </div>
                     </div>
                     <div class="panel-footer">
-                        <button type="button" class="btn btn-danger">Delete all</button>
+                        <button type="button" class="btn btn-danger">
+                            Delete all
+                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                        </button>
                     </div>
                 </div>
             </div>
