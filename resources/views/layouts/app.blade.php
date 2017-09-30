@@ -28,6 +28,7 @@
             box-sizing: border-box;
         }
     </style>
+    <script src="/js/angular.min.js"></script>
 </head>
 <body>
     <div id="app">
