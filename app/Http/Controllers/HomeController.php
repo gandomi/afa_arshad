@@ -65,13 +65,13 @@ class HomeController extends Controller
         $student->area_of_interest = $request->area_of_interest;
         $student->memo = $request->memo;
         $student->priorities = [
-            $request->priority_1,
-            $request->priority_2,
-            $request->priority_3,
-            $request->priority_4,
-            $request->priority_5,
-            $request->priority_6,
-            $request->priority_7,
+            "1" => $request->priority_1,
+            "2" =>  $request->priority_2,
+            "3" =>  $request->priority_3,
+            "4" =>  $request->priority_4,
+            "5" =>  $request->priority_5,
+            "6" =>  $request->priority_6,
+            "7" =>  $request->priority_7,
         ];
         $student->save();
 
